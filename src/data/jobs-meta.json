@@ -1,0 +1,29 @@
+{
+  "source": "Adzuna",
+  "fetchedAt": "2026-08-07T00:22:24.392Z",
+  "count": 186,
+  "requests": 60,
+  "markets": [
+    "Los Angeles, CA",
+    "San Francisco, CA",
+    "San Diego, CA",
+    "Sacramento, CA",
+    "Las Vegas, NV"
+  ],
+  "queries": [
+    "hair stylist",
+    "hairstylist",
+    "colorist",
+    "cosmetologist",
+    "nail technician",
+    "manicurist",
+    "barber",
+    "esthetician",
+    "makeup artist",
+    "lash technician",
+    "balayage stylist",
+    "beautician"
+  ],
+  "note": "Title-filtered to hands-on cosmetology roles only",
+  "skillMapping": "keyword match on title+description; esthetician -> Esthetics (not Lash & brow)"
+}

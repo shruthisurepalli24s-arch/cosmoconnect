@@ -1,36 +1,43 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Cosmo Connect
 
-## Getting Started
+Cosmetology job portal with skill-demand insights for LA, SF, San Diego, Sacramento, and Vegas.
 
-First, run the development server:
+## Phase 1
+
+- Searchable board of salon / beauty jobs
+- Filters by city, skill, and source
+- Insights from hiring posts (top skills, cities, sources)
+- Apply links out to the **original** posting
+
+Product plan: [`docs/PLAN.md`](docs/PLAN.md)
+
+## Real job data (Adzuna)
+
+Listings are pulled from [Adzuna](https://developer.adzuna.com/) (aggregates Indeed and other boards). Apply buttons use each ad’s real `redirect_url`.
+
+1. Sign up free: https://developer.adzuna.com/signup  
+2. Copy App ID + App Key into `.env.local`:
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+cp .env.example .env.local
+# edit .env.local
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+3. Fetch jobs:
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```bash
+npm run fetch:jobs
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+4. Run locally:
 
-## Learn More
+```bash
+npm install
+npm run dev
+```
 
-To learn more about Next.js, take a look at the following resources:
+Open [http://localhost:3000](http://localhost:3000).
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Stack
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Next.js · TypeScript · Tailwind CSS · Adzuna Jobs API

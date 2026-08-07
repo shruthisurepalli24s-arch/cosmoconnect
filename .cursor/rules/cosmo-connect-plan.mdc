@@ -1,0 +1,27 @@
+---
+description: Cosmo Connect product plan and phase-wise build discipline
+alwaysApply: true
+---
+
+# Cosmo Connect
+
+LinkedIn for cosmetology: hiring demand drives what professionals learn; verified skills build trusted careers; salons, educators, and beauty brands share one ecosystem.
+
+Full plan: `docs/PLAN.md`  
+Source doc: https://docs.google.com/document/d/1y7Gx-g6Fkdx5vsFij0RGo2MDkulU5DfR-3U2u4ILnIo/edit?tab=t.0
+
+## Build discipline
+
+- Build **phase by phase only when the user explicitly says to start a phase**.
+- Do not jump ahead or scaffold later phases unless asked.
+- Prefer the current phase's goals over premature features.
+
+## Phases (summary)
+
+1. **Community** — Aggregate & analyze cosmetology jobs (LA, SF, San Diego, Sacramento, Vegas). Target 300–500 live listings; searchable board; Instagram/FB groups matter more than Indeed.
+2. **Acquire professionals** — Free profiles, job alerts by skill/city, skill-demand reports, portfolio, community. Goal: users, not revenue.
+3. **Demand → education** — Data picks first 3 classes; partner with educators/academies; don't build courses in-house.
+4. **Verify skills** — Practical assessments, portfolio, instructor/employer/peer/client signals.
+5. **Sell to salons** — Verified candidates with portfolio + scores + badges.
+
+Brand sponsorship (e.g. demand-sponsored academies) is a later monetization wedge after demand data exists.
